@@ -2,7 +2,6 @@ sddm-git
 dunst
 pipewire
 wireplumber
-xdg-desktop-portal-hyprland-git
 polkit-kde-agent
 qt5-wayland
 qt6-wayland
@@ -19,6 +18,7 @@ kcalc
 gwenview
 cliphist
 udiskie
+xdg-desktop-portal-hyprland-git
 hyprland-nvidia-git
 git-lfs-git
 spotify
