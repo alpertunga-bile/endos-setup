@@ -17,6 +17,7 @@ okular
 kcalc
 gwenview
 cliphist
+wlsunset
 udiskie
 xdg-desktop-portal-hyprland-git
 hyprland-nvidia-git

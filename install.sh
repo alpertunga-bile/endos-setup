@@ -5,6 +5,9 @@ echo "Starting setup"
 echo "Saving yay config"
 yay --save --answerdiff None --answerclean None --removemake --devel --cleanafter
 
+echo "Update environment"
+yay
+
 # Download packages
 while read -r package; do
 yay -S --needed --noconfirm $package
