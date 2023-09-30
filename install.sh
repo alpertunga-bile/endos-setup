@@ -76,6 +76,9 @@ cp -r ./hypr/ ~/.config/
 cp -r ./swaylock ~/.config/
 cp -r ./waybar/ ~/.config/
 
+chmod +x rofi/install.sh
+./rofi/install.sh
+
 clear
 
 echo "Setup is completed"
