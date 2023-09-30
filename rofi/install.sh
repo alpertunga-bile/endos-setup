@@ -13,7 +13,7 @@ else
     mv "$_rofi/config.rasi" "$_rofi/userconfig/"
 fi
 
-cp -r rofi/.config/rofi/* "$_rofi"
-cp -r rofi/.local/share/rofi/themes/* "$_theme"
+cp -r rofi/config/rofi/* "$_rofi"
+cp -r rofi/local/share/rofi/themes/* "$_theme"
 
 
