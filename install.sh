@@ -6,7 +6,7 @@ echo "Saving yay config"
 yay --save --answerdiff None --answerclean None --removemake --cleanafter
 
 echo "Purging xfce4 xfce4-goodies"
-yay -Rnsd xfce4 xfce4-goodies
+yay -Rnsd --nodeps xfce4 xfce4-goodies
 clear
 
 echo "Update environment"
