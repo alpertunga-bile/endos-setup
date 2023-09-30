@@ -79,6 +79,11 @@ cp -r ./waybar/ ~/.config/
 chmod +x rofi/install.sh
 ./rofi/install.sh
 
+cp -r ./cursors/cyberpunk/ ~/.local/share/icons
+cp -r ./cursors/diablo/ ~/.local/share/icons
+cp -r ./cursors/doom/ ~/.local/share/icons
+cp -r ./cursors/overwatch/ ~/.local/share/icons
+
 clear
 
 echo "Setup is completed"
