@@ -32,6 +32,7 @@ yay -S --needed --noconfirm adobe-source-code-pro-fonts
 yay -S --needed --noconfirm otf-latinmodern-math
 
 yay -S --needed --noconfirm nwg-look-bin
+yay -S --needed --noconfirm nwg-bar-bin
 yay -S --needed --noconfirm qt5ct
 yay -S --needed --noconfirm nordic-theme
 yay -S --needed --noconfirm papirus-icon-theme
