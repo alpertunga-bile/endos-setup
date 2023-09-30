@@ -20,7 +20,7 @@ clear
 #    yay -S --needed --noconfirm $package
 # done < packages.txt
 
-# Fonts
+# fonts
 yay -S --needed --noconfirm ttf-anonymous-pro
 yay -S --needed --noconfirm ttf-roboto-mono
 yay -S --needed --noconfirm ttf-jetbrains-mono
@@ -31,6 +31,7 @@ yay -S --needed --noconfirm ttf-hack
 yay -S --needed --noconfirm adobe-source-code-pro-fonts
 yay -S --needed --noconfirm otf-latinmodern-math
 
+# icons and themes
 yay -S --needed --noconfirm nwg-look-bin
 yay -S --needed --noconfirm nwg-bar-bin
 yay -S --needed --noconfirm qt5ct
@@ -61,6 +62,16 @@ yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm xdg-desktop-portal-hyprland
 yay -S --needed --noconfirm hyprland-nvidia-git
 
+# mount
+yay -S --needed --noconfirm gvfs
+
+# screenshot
+yay -S --needed --noconfirm grim slurp
+mkdir ~/screenshots
+
+# image and video thumbnail
+yay -S --needed --noconfirm tumbler ffmpegthumbnailer
+
 # my programs
 yay -S --needed --noconfirm spotify
 yay -S --needed --noconfirm spicetify-cli
@@ -71,8 +82,8 @@ yay -S --needed --noconfirm clang
 yay -S --needed --noconfirm mullvad-vpn
 yay -S --needed --noconfirm github-cli
 
-echo "Copying config folders"
 # Copy to config folder
+echo "Copying config folders"
 cp -r ./dunst/ ~/.config/
 cp -r ./hypr/ ~/.config/
 cp -r ./swaylock ~/.config/
