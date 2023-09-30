@@ -29,10 +29,13 @@ yay -S --needed --noconfirm ttf-hack
 yay -S --needed --noconfirm adobe-source-code-pro-fonts
 yay -S --needed --noconfirm otf-latinmodern-math
 
+yay -S --needed --noconfirm nwg-look-bin
+yay -S --needed --noconfirm qt5ct
 yay -S --needed --noconfirm nordic-theme
 yay -S --needed --noconfirm papirus-icon-theme
 yay -S --needed --noconfirm breeze-default-cursor-theme
 
+# applications for default desktop
 yay -S --needed --noconfirm dunst
 yay -S --needed --noconfirm pipewire
 yay -S --needed --noconfirm wireplumber
@@ -45,7 +48,7 @@ yay -S --needed --noconfirm swaylock-effects
 yay -S --needed --noconfirm rofi-lbonn-wayland-git
 yay -S --needed --noconfirm discord
 yay -S --needed --noconfirm kitty-git
-yay -S --needed --noconfirm thunar
+yay -S --needed --noconfirm thunar thunar-archive-plugin thunar-volman
 yay -S --needed --noconfirm okular
 yay -S --needed --noconfirm kcalc
 yay -S --needed --noconfirm gwenview
@@ -54,6 +57,8 @@ yay -S --needed --noconfirm wlsunset
 yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm xdg-desktop-portal-hyprland
 yay -S --needed --noconfirm hyprland-nvidia-git
+
+# my programs
 yay -S --needed --noconfirm spotify
 yay -S --needed --noconfirm spicetify-cli
 yay -S --needed --noconfirm visual-studio-code-bin
@@ -71,7 +76,5 @@ cp -r ./swaylock ~/.config/
 cp -r ./waybar/ ~/.config/
 
 clear
-
-hyprctl setcursor Breeze_Obsidian 24
 
 echo "Setup is completed"
