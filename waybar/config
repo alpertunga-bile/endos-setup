@@ -6,8 +6,8 @@
     "margin-top": 5,
     "margin-bottom":5,
 
-    "modules-left":[  "custom/launcher", "custom/media", "tray"],
-    "modules-center":[ "idle_inhibitor", "pulseaudio", "cpu", "memory", "temperature", "keyboard-state", "network", "clock"],
+    "modules-left":[  "custom/launcher"],
+    "modules-center":[ "idle_inhibitor", "pulseaudio", "cpu", "memory", "temperature", "keyboard-state", "network", "clock", "custom/media", "tray"],
     "modules-right":["river/tags","custom/power"],
 
     "river/tags": {
