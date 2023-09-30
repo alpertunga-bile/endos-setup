@@ -5,11 +5,12 @@ echo "Starting setup"
 echo "Saving yay config"
 yay --save --answerdiff None --answerclean None --removemake --cleanafter
 
+echo "Purging xfce4 xfce4-goodies"
+yay -Rnsd xfce4 xfce4-goodies
 clear
 
 echo "Update environment"
 yay
-
 clear
 
 # Download packages
@@ -17,21 +18,34 @@ clear
 #    echo $package
 #    yay -S --needed --noconfirm $package
 # done < packages.txt
-yay -S --needed --noconfirm sddm-git
+
+# Fonts
+yay -S --needed --noconfirm ttf-anonymous-pro
+yay -S --needed --noconfirm ttf-roboto-mono
+yay -S --needed --noconfirm ttf-jetbrains-mono
+yay -S --needed --noconfirm font-awesome
+yay -S --needed --noconfirm ttf-monaco
+yay -S --needed --noconfirm ttf-hack
+yay -S --needed --noconfirm adobe-source-code-pro-fonts
+yay -S --needed --noconfirm otf-latinmodern-math
+
+yay -S --needed --noconfirm nordic-theme
+yay -S --needed --noconfirm papirus-icon-theme
+yay -S --needed --noconfirm breeze-default-cursor-theme
+
 yay -S --needed --noconfirm dunst
 yay -S --needed --noconfirm pipewire
 yay -S --needed --noconfirm wireplumber
 yay -S --needed --noconfirm polkit-kde-agent
 yay -S --needed --noconfirm qt5-wayland
 yay -S --needed --noconfirm qt6-wayland
-yay -S --needed --noconfirm ttf-jetbrains-mono
 yay -S --needed --noconfirm waybar
 yay -S --needed --noconfirm swww
 yay -S --needed --noconfirm swaylock-effects
 yay -S --needed --noconfirm rofi-lbonn-wayland-git
 yay -S --needed --noconfirm discord
 yay -S --needed --noconfirm kitty-git
-yay -S --needed --noconfirm dolphin
+yay -S --needed --noconfirm thunar
 yay -S --needed --noconfirm okular
 yay -S --needed --noconfirm kcalc
 yay -S --needed --noconfirm gwenview
@@ -55,5 +69,9 @@ cp -r ./dunst/ ~/.config/
 cp -r ./hypr/ ~/.config/
 cp -r ./swaylock ~/.config/
 cp -r ./waybar/ ~/.config/
+
+clear
+
+hyprctl setcursor Breeze_Obsidian 24
 
 echo "Setup is completed"
