@@ -11,6 +11,7 @@ clear
 
 echo "Update environment"
 yay
+yay --devel
 clear
 
 # Download packages
