@@ -89,7 +89,7 @@ cp -r ./hypr/ ~/.config/
 cp -r ./swaylock ~/.config/
 cp -r ./waybar/ ~/.config/
 cp -r ./rofi/config/rofi/ ~/.config/
-cp -r ./rofi/local/share/rofi/themes/ ~/.local/share/ 
+cp -r ./rofi/local/share/rofi/themes/ ~/.local/share/
 
 clear
 
