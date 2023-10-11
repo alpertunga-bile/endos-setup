@@ -9,3 +9,6 @@ meshoptimizer
 cpp-taskflow
 concurrent-queue-git
 moonray
+emacs
+ripgrep
+fd
