@@ -14,12 +14,6 @@ yay
 yay --devel
 clear
 
-# Download packages
-# while IFS= read -r package; do
-#    echo $package
-#    yay -S --needed --noconfirm $package
-# done < packages.txt
-
 # essentials
 yay -S --needed --noconfirm cmake
 yay -S --needed --noconfirm clang
@@ -27,6 +21,7 @@ yay -S --needed --noconfirm github-cli
 
 # fonts
 yay -S --needed --noconfirm ttf-anonymous-pro
+yay -S --needed --noconfirm ttf-material-symbols-git
 yay -S --needed --noconfirm ttf-roboto-mono
 yay -S --needed --noconfirm ttf-jetbrains-mono
 yay -S --needed --noconfirm ttf-font-awesome
