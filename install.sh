@@ -96,8 +96,10 @@ yay -S --needed --noconfirm fd
 yay -S --needed --noconfirm optix
 yay -S --needed --noconfirm cuda
 
-# game engine essentials
+# game engine
 yay -S --needed --noconfirm vulkan-devel
+yay -S --needed --noconfirm vulkan-memory-allocator
+yay -S --needed --noconfirm volk-git
 yay -S --needed --noconfirm gegl
 yay -S --needed --noconfirm assimp
 yay -S --needed --noconfirm include-what-you-use
