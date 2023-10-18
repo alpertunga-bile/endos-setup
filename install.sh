@@ -9,7 +9,7 @@ echo "Purging xfce4 xfce4-goodies"
 yay -Rnsd --nodeps xfce4 xfce4-goodies
 clear
 
-echo "Update environment"
+echo "Updating environment"
 yay
 yay --devel
 clear
@@ -35,7 +35,7 @@ yay -S --needed --noconfirm otf-latinmodern-math
 yay -S --needed --noconfirm nwg-look-bin
 yay -S --needed --noconfirm sddm-conf-git
 yay -S --needed --noconfirm nwg-bar-bin
-yay -S --needed --noconfirm qt5ct
+# yay -S --needed --noconfirm qt5ct
 yay -S --needed --noconfirm nordic-theme
 yay -S --needed --noconfirm papirus-icon-theme
 yay -S --needed --noconfirm breeze-default-cursor-theme
@@ -115,6 +115,7 @@ yay -S --needed --noconfirm cgal-git
 yay -S --needed --noconfirm cpp-taskflow
 yay -S --needed --noconfirm concurrent-queue-git
 yay -S --needed --noconfirm moonray
+yay -S --needed --noconfirm moonray-gui
 
 clear
 
