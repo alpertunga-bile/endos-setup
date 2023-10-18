@@ -53,7 +53,10 @@ yay -S --needed --noconfirm wireplumber
 yay -S --needed --noconfirm polkit-kde-agent
 yay -S --needed --noconfirm qt5-wayland
 yay -S --needed --noconfirm qt6-wayland
-yay -S --needed --noconfirm waybar
+yay -S --needed --noconfirm waybar-hyprland
+yay -S --needed --noconfirm waybar-mpris-git
+yay -S --needed --noconfirm cava
+yay -S --needed --noconfirm starship
 yay -S --needed --noconfirm eww-wayland
 yay -S --needed --noconfirm swww
 yay -S --needed --noconfirm swaylock-effects
