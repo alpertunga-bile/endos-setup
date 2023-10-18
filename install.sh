@@ -45,7 +45,7 @@ yay -S --needed --noconfirm nordic-theme
 yay -S --needed --noconfirm papirus-icon-theme
 yay -S --needed --noconfirm breeze-default-cursor-theme
 
-# applications for hyprland
+# applications for desktop environment
 yay -S --needed --noconfirm sddm-git
 yay -S --needed --noconfirm dunst
 yay -S --needed --noconfirm pipewire
@@ -121,13 +121,11 @@ yay -S --needed --noconfirm cpp-taskflow
 yay -S --needed --noconfirm concurrent-queue-git
 yay -S --needed --noconfirm moonray
 
+clear
+
 # Copy to config folder
 echo "Copying config folders"
-cp -r ./dunst/ ~/.config/
-cp -r ./hypr/ ~/.config/
-cp -r ./swaylock ~/.config/
-cp -r ./waybar/ ~/.config/
-cp -r ./rofi/config/rofi/ ~/.config/
+cp -r ./config/* ~/.config
 cp -r ./rofi/local/share/rofi/themes/ ~/.local/share/
 
 clear
