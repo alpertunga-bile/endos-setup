@@ -16,6 +16,7 @@ clear
 
 # essentials
 yay -S --needed --noconfirm cmake
+yay -S --needed --noconfirm ninja
 yay -S --needed --noconfirm clang
 yay -S --needed --noconfirm github-cli
 
@@ -101,10 +102,11 @@ yay -S --needed --noconfirm vulkan-devel
 yay -S --needed --noconfirm vulkan-memory-allocator
 yay -S --needed --noconfirm volk-git
 yay -S --needed --noconfirm gegl
+yay -S --needed --noconfirm imgui
 yay -S --needed --noconfirm assimp
 yay -S --needed --noconfirm include-what-you-use
 yay -S --needed --noconfirm lz4
-yay -S --needed --noconfirm draco-git
+yay -S --needed --noconfirm draco
 yay -S --needed --noconfirm compressonator-git
 yay -S --needed --noconfirm meshoptimizer
 yay -S --needed --noconfirm glfw-wayland
@@ -112,6 +114,12 @@ yay -S --needed --noconfirm meshlab
 yay -S --needed --noconfirm bgfx-git
 yay -S --needed --noconfirm glm
 yay -S --needed --noconfirm cgal-git
+yay -S --needed --noconfirm embree
+yay -S --needed --noconfirm usd
+yay -S --needed --noconfirm usd-draco
+yay -S --needed --noconfirm usd-openshadinglanguage
+yay -S --needed --noconfirm usd-alembic
+yay -S --needed --noconfirm usd-openvdb
 
 # coding packages
 yay -S --needed --noconfirm cpp-taskflow
