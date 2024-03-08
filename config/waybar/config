@@ -6,53 +6,102 @@
     "margin-top": 5,
     "margin-bottom":5,
 
-    "modules-left":[  "custom/launcher"],
-    "modules-center":[ "idle_inhibitor", "pulseaudio", "cpu", "memory", "temperature", "keyboard-state", "network", "clock", "custom/media", "tray"],
-    "modules-right":["river/tags","custom/power"],
+    "modules-left":["custom/firefox", "custom/discord", "custom/spotify", "custom/updates"],
+    "modules-center":["clock", "custom/media", "cava"],
+    "modules-right":["network", "pulseaudio", "group/group-power"],
 
-    "river/tags": {
-        "num-tags": 5
+    "custom/firefox": {
+        "format": "󰈹",
+        "tooltip": false,
+        "on-click": "firefox &"
     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": " {name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+
+    "custom/discord": {
+        "format": "󰙯",
+        "tooltip": false,
+        "on-click": "discord &"
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
+
+    "custom/spotify": {
+        "format": "󰓇",
+        "tooltip": false,
+        "on-click": "spotify &"
     },
-    "tray": {
-        "icon-size": 20,
-        "spacing": 10
+
+    "custom/updates": {
+    	"format": "{}",
+	"interval": 3600,
+	"exec": "$HOME/.config/waybar/check_updates.sh",
+	"exec-if": "exit 0",
+	"signal": 8
     },
+
+    "group/group-power": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-power",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/power",
+            "custom/quit",
+            "custom/lock",
+            "custom/reboot"
+        ]
+    },
+
+    "custom/quit": {
+        "format": "󰿅",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    },
+
+    "custom/lock": {
+        "format": "󰌾",
+        "tooltip": false,
+        "on-click": "hyprlock"
+    },
+
+    "custom/reboot": {
+        "format": "󰑓",
+        "tooltip": false,
+        "on-click": "reboot"
+    },
+
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "shutdown now"
+    },
+
+    "cava": {
+        "framerate": 60,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
-    },
-    "backlight": {
-        "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
-    },
+
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "Connected  ",
@@ -62,6 +111,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click-right": "bash ~/.config/rofi/wifi_menu/rofi_wifi_menu"
     },
+
     "pulseaudio": {
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
@@ -80,26 +130,11 @@
         },
         "on-click": "pavucontrol"
     },
+
     "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "format": "{}",
+        "max-length": 60,
+        "exec": "playerctl --follow metadata --format '{{ artist }} - {{ title }}'",
         "on-click": "playerctl play-pause"
-    },
-    "custom/launcher":{
-        "format": "",
-        "on-click": "rofi --show drun",
-        "on-click-right": "killall rofi"
-    },
-    "custom/power":{
-        "format": "  ",
-        "on-click": "nwg-bar",
-        "on-click-right": "killall nwg-bar"
     }
 }
