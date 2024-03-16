@@ -1,9 +1,7 @@
 #!/bin/bash
 
-PACMAN_NUM_PACKAGES=$(pacman -Qu | wc -l)
-# DEVEL_NUM_PACKAGES=$(yay -Qu --devel | wc -l) # it is slow
+PACMAN_NUM_PACKAGES=$(checkupdates | wc -l)
 
-# NUM_PACKAGES=$(($PACMAN_NUM_PACKAGES + $DEVEL_NUM_PACKAGES))
 NUM_PACKAGES=$PACMAN_NUM_PACKAGES
 
 case $NUM_PACKAGES in
@@ -17,5 +15,3 @@ case $NUM_PACKAGES in
 		echo "$NUM_PACKAGES packages are available"
 		;;
 esac
-
-exit 0

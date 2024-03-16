@@ -29,9 +29,9 @@
     },
 
     "custom/updates": {
-    	"format": "{}",
+    	"format": "󰇚  {}",
 	"interval": 3600,
-	"exec": "$HOME/.config/waybar/check_updates.sh",
+	"exec": "checkupdates | wc -l",
 	"exec-if": "exit 0",
 	"signal": 8
     },
