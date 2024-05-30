@@ -12,7 +12,8 @@ window#waybar {
 
 #custom-firefox,
 #custom-discord,
-#custom-spotify {
+#custom-spotify, 
+#custom-vscode{
     font-size: 24px;
     padding: 5px 10px;
     color: white;
