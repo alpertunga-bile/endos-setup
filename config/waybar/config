@@ -36,10 +36,10 @@
 
     "custom/updates": {
     	"format": "󰇚  {}",
-	"restart_interval": 3600,
-	"exec": "checkupdates | wc -l",
-	"exec-if": "exit 0",
-	"signal": 8
+	    "interval": 30,
+	    "exec": "~/.config/waybar/check_updates.sh",
+        "exec-if": "exit 0",
+        "signal": 8
     },
 
     "group/group-power": {
@@ -115,20 +115,19 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click-right": "bash ~/.config/rofi/wifi_menu/rofi_wifi_menu"
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": "{icon}  {format_source}",
         "format-muted": "{format_source}",
         "format-source": "",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
@@ -141,6 +140,9 @@
         "format": "{}",
         "max-length": 60,
         "exec": "playerctl --follow metadata --format '{{ artist }} - {{ title }}'",
-        "on-click": "playerctl play-pause"
+        "exec-if": "pgrep spotify",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl -p spotify next",
+        "on-scroll-down": "playerctl -p spotify previous"
     }
 }
