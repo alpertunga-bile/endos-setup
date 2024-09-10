@@ -48,25 +48,20 @@ yay -S --needed --noconfirm wireplumber
 yay -S --needed --noconfirm polkit-kde-agent
 yay -S --needed --noconfirm qt5-wayland
 yay -S --needed --noconfirm qt6-wayland
-yay -S --needed --noconfirm waybar-cava-git
+yay -S --needed --noconfirm waybar
 yay -S --needed --noconfirm cava 
 yay -S --needed --noconfirm starship
 yay -S --needed --noconfirm eww
 yay -S --needed --noconfirm swww
 yay -S --needed --noconfirm rofi-lbonn-wayland-git
-yay -S --needed --noconfirm kitty-git
+yay -S --needed --noconfirm kitty
 yay -S --needed --noconfirm thunar thunar-archive-plugin thunar-volman
 yay -S --needed --noconfirm cliphist
 yay -S --needed --noconfirm wlsunset
 yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm xdg-desktop-portal-hyprland
-yay -S --needed --noconfirm hyprwayland-scanner-git
-yay -S --needed --noconfirm hyprcursor-git
-yay -S --needed --noconfirm hyprland-git
+yay -S --needed --noconfirm hyprland
 yay -S --needed --noconfirm libva-nvidia-driver-git
-
-# mount
-yay -S --needed --noconfirm gvfs
 
 # screenshot
 yay -S --needed --noconfirm grim slurp
@@ -77,8 +72,8 @@ yay -S --needed --noconfirm tumbler ffmpegthumbnailer
 
 # casual programs
 yay -S --needed --noconfirm spotify
-yay -S --needed --noconfirm spicetify-cli
-yay -S --needed --noconfirm mullvad-vpn
+yay -S --needed --noconfirm mullvad-vpn-bin
+yay -S --needed --noconfirm mullvad-browser-bin
 yay -S --needed --noconfirm discord
 yay -S --needed --noconfirm okular
 yay -S --needed --noconfirm kcalc
@@ -86,7 +81,7 @@ yay -S --needed --noconfirm gwenview
 yay -S --needed --noconfirm lutris 
 yay -S --needed --noconfirm oh-my-zsh-git 
 yay -S --needed --noconfirm gameconqueror 
-yay -S --needed --noconfirm unzip 
+yay -S --needed --noconfirm p7zip
 yay -S --needed --noconfirm zsh 
 
 # coding applications
