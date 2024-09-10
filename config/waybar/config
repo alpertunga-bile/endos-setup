@@ -13,25 +13,25 @@
     "custom/firefox": {
         "format": "󰈹",
         "tooltip": false,
-        "on-click": "firefox &"
+        "on-click": "firefox "
     },
 
     "custom/discord": {
         "format": "󰙯",
         "tooltip": false,
-        "on-click": "discord &"
+        "on-click": "discord "
     },
 
     "custom/spotify": {
         "format": "󰓇",
         "tooltip": false,
-        "on-click": "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland &"
+        "on-click": "spotify"
     },
 
     "custom/vscode": {
         "format": "󰨞",
         "tooltip": false,
-        "on-click": "code --enable-features=UseOzonePlatform --ozone-platform=wayland &"
+        "on-click": "code"
     },
 
     "custom/updates": {
