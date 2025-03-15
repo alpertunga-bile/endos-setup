@@ -14,11 +14,15 @@ yay
 yay --devel
 clear
 
-# essentials
-yay -S --needed --noconfirm cmake
-yay -S --needed --noconfirm ninja
-yay -S --needed --noconfirm clang
-yay -S --needed --noconfirm github-cli
+install_packages_from_file() {
+    echo "Install $1 packages"
+
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        yay -S --needed --noconfirm "$line"
+    done < "$1"
+}
+
+install_packages_from_file essential
 
 # fonts
 yay -S --needed --noconfirm ttf-anonymous-pro
