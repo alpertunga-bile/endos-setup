@@ -1,0 +1,4 @@
+cmake
+ninja
+clang
+github-cli
