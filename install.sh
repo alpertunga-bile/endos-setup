@@ -9,17 +9,25 @@ echo "Purging xfce4 xfce4-goodies"
 yay -Rnsd --nodeps xfce4 xfce4-goodies
 clear
 
+echo "Cleaning packages"
+yay --clean
+yay -Yc
+clear
+
 echo "Updating environment"
 yay
 yay --devel
 clear
 
 install_packages_from_file() {
+    local filepath="pkgs/$1"
     echo "Install $1 packages"
 
     while IFS= read -r line || [[ -n "$line" ]]; do
         yay -S --needed --noconfirm "$line"
-    done < "$1"
+    done < "$filepath"
+
+    clear
 }
 
 install_packages_from_file essential
