@@ -1,0 +1,13 @@
+visual-studio-code-bin
+zed
+ghidra
+vulkan-devel
+vulkan-memory-allocator
+include-what-you-use
+embree
+openshadinglanguage
+ispc
+usd
+glfw-wayland
+cuda
+onetbb 
