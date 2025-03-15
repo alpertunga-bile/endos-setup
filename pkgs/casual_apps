@@ -7,6 +7,9 @@ kcalc
 gwenview
 lutris 
 zsh 
+zsh-syntax-highlighting
+zsh-autosuggestions
 p7zip
 wine
+winetricks
 neovim
