@@ -42,11 +42,16 @@ install_packages() {
 install_packages
 
 # Copy to config folder
-echo "Copying config folders"
+echo "/_\\ Copying config folders"
 cp -r ./config/* ~/.config
+cp -r ./etc/* /etc/
 cp -r ./rofi/local/share/rofi/themes/ ~/.local/share/
 cp ./zshrc ~/
 
 clear
 
-echo "Setup is completed"
+echo "/_\\ Setup is completed"
+
+sleep 10s
+
+reboot
