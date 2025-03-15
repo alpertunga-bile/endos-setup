@@ -10,4 +10,5 @@ ispc
 usd
 glfw-wayland
 cuda
-onetbb 
+rust
+ninja

@@ -1,4 +1,6 @@
 sddm
+qt5-quickcontrol2
+qt5-graphicaleffects
 dunst
 pipewire
 wireplumber

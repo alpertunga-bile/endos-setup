@@ -41,11 +41,15 @@ install_packages() {
 
 install_packages
 
+# Installing oh-my-zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Copy to config folder
 echo "/_\\ Copying config folders"
 cp -r ./config/* ~/.config
 cp -r ./etc/* /etc/
 cp -r ./rofi/local/share/rofi/themes/ ~/.local/share/
+cp -r ./sddm/ /usr/share/
 cp ./zshrc ~/
 
 clear
