@@ -1,15 +1,13 @@
-spotify-launcher
+spotify
 mullvad-vpn-bin
 mullvad-browser-bin
 discord
 okular
 kcalc
 gwenview
-lutris 
 zsh 
 zsh-syntax-highlighting
 zsh-autosuggestions
 p7zip
-wine
-winetricks
+bottles
 neovim
