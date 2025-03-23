@@ -22,7 +22,7 @@ install_packages_from_file() {
     echo "/_\\ Installing $1 packages"
 
     while IFS= read -r line || [[ -n "$line" ]]; do
-        yay -S --needed --noconfirm "$line"
+        yay -S --needed "$line"
     done < "$filepath"
 
     clear
@@ -50,13 +50,12 @@ install_packages
 systemctl enable sddm.service
 
 # Installing oh-my-zsh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+(sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)")
 
 # Copy to config folder
 echo "/_\\ Copying config folders"
 cp -r ./config/* ~/.config
 cp -r ./etc/* /etc/
-cp -r ./rofi/local/share/rofi/themes/ ~/.local/share/
 cp -r ./sddm/ /usr/share/
 cp ./.zshrc ~/
 

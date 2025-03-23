@@ -13,7 +13,7 @@ ZSH_THEME="robbyrussell"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -144,7 +144,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
+eval "$(starship init zsh)"
+
 alias sys-update='eos-update --aur && yay --devel'
-alias mull-browser='cd ~/mullvad-browser/Browser && ./start-mullvad-browser'
-alias code_wayland='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
-alias spotify_wayland='spotify --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias sys-clear='yay --clean && yay -Yc'
