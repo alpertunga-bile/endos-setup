@@ -80,7 +80,6 @@ yay -S --needed zsh
 yay -S --needed zsh-syntax-highlighting
 yay -S --needed zsh-autosuggestions
 yay -S --needed p7zip
-yay -S --needed bottles
 yay -S --needed neovim
 clear
 
