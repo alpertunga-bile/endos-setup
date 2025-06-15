@@ -35,12 +35,18 @@ def add_pkg_cmds(cmds: list[str]) -> None:
         cmds.append("clear\n")
 
 
-def add_copy_cmds(cmds: list[str]):
+def add_copy_cmds(cmds: list[str]) -> None:
     cmds.append("# Copy configs to folders")
     cmds.append("cp -r ./config/* ~/.config/")
     cmds.append("sudo cp -r ./etc/* /etc/")
     cmds.append("sudo cp -r ./sddm/ /usr/share/")
     cmds.append("cp ./.zshrc ~/")
+    cmds.append("clear\n")
+
+    cmds.append("# Copy images to the Pictures folder")
+    cmds.append("7z x wallpapers.7z")
+    cmds.append("cp -r ./linux_wallpapers/* ~/Pictures/")
+    cmds.append("rm -rf ./linux_wallpapers/")
     cmds.append("clear\n")
 
 
