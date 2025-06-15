@@ -10,4 +10,4 @@ ispc
 usd
 glfw-wayland
 cuda
-rust
+rustup
