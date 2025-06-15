@@ -17,7 +17,6 @@ clear
 
 # Packages from pkgs\fonts
 yay -S --needed ttf-anonymous-pro
-yay -S --needed ttf-material-symbols-git
 yay -S --needed ttf-roboto-mono
 yay -S --needed ttf-jetbrains-mono
 yay -S --needed ttf-font-awesome
@@ -92,6 +91,12 @@ cp -r ./config/* ~/.config/
 sudo cp -r ./etc/* /etc/
 sudo cp -r ./sddm/ /usr/share/
 cp ./.zshrc ~/
+clear
+
+# Copy images to the Pictures folder
+7z x wallpapers.7z
+cp -r ./linux_wallpapers/* ~/Pictures/
+rm -rf ./linux_wallpapers/
 clear
 
 echo "/_\ Setup is completed"
