@@ -8,14 +8,14 @@ yay --devel
 mkdir ~/screenshots
 clear
 
-# Packages from pkgs\essentials
+# Packages from pkgs/essentials
 yay -S --needed cmake
 yay -S --needed ninja
 yay -S --needed clang
 yay -S --needed github-cli
 clear
 
-# Packages from pkgs\fonts
+# Packages from pkgs/fonts
 yay -S --needed ttf-anonymous-pro
 yay -S --needed ttf-roboto-mono
 yay -S --needed ttf-jetbrains-mono
@@ -28,7 +28,7 @@ yay -S --needed otf-latinmodern-math
 yay -S --needed ttf-nerd-fonts-symbols
 clear
 
-# Packages from pkgs\themes
+# Packages from pkgs/themes
 yay -S --needed nwg-look
 yay -S --needed qt5ct
 yay -S --needed qt6ct
@@ -37,7 +37,7 @@ yay -S --needed papirus-icon-theme
 yay -S --needed breeze-default-cursor-theme
 clear
 
-# Packages from pkgs\desktop
+# Packages from pkgs/desktop
 yay -S --needed sddm
 yay -S --needed qt5-quickcontrols2
 yay -S --needed qt5-graphicaleffects
@@ -68,7 +68,7 @@ yay -S --needed ffmpegthumbnailer
 yay -S --needed hyprlock
 clear
 
-# Packages from pkgs\casual_apps
+# Packages from pkgs/casual_apps
 yay -S --needed spotify
 yay -S --needed mullvad-vpn-bin
 yay -S --needed mullvad-browser-bin
